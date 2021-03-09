@@ -149,8 +149,8 @@ const checkboxClick = async (e) => {
   }
 };
 
-const repo_conntainer = document.getElementById("repo-content-pjax-container");
+const discussion_bucket = document.getElementById("discussion_bucket")
+const project_container = document.getElementsByClassName("js-project-container")[0]
 
-const checkboxes = repo_conntainer
-  ? repo_conntainer.addEventListener("click", checkboxClick)
-  : null;
+project_container && project_container.addEventListener("click", checkboxClick)
+discussion_bucket && discussion_bucket.addEventListener("click", checkboxClick)
